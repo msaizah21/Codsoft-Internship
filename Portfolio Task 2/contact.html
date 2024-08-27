@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aiza's Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+<!--Cdn Awesome Font Library-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="container">  
+        <form id="contact-form" action="">
+            
+          <h3>Contact Us!</h3>
+          <br>
+          <a href="https://www.facebook.com/misshaizah/"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/its_aizah/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/msaizah21"><i class="fa-brands fa-twitter"></i></i></a>
+          <a href="https://github.com/msaizah21"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UCKARpPRcMh0TLgyFnQwOYcg"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/miss-aizah-a49b26229/"><i class="fa-brands fa-linkedin"></i></a>
+          <h4>
+            <a href="mailto:aizayy21@gmail.com">
+                aizayy21@gmail.com
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+            
+            <a href="tel:050-642-6390">
+                050-642-6390
+                <i class="fa-sharp fa-solid fa-phone"></i>
+            </a>
+        </h4>
+        
+
+          <h4>Contact us today, and get reply with in 24 hours!</h4>
+          <fieldset>
+
+
+            <form id="contact-form"  name="contact-form">
+                
+            <input id="name" placeholder="Your Name" name="name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+
+
+
+          <input id="email" placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+
+
+            <input id="phone" placeholder="Your Phone Number" type="tel" name="phone" tabindex="3" required>
+          </fieldset>
+
+          <fieldset>
+            <textarea id="message" placeholder="Type your Message Here...." name="message"  tabindex="5" required></textarea>
+          </fieldset>
+
+        </fieldset>
+
+        <button id="submit" type="submit" name="submit" data-submit="...Sending">Submit</button>
+        
+        </fieldset>
+        
+        </div>
+        </form>
+
+      </div>
+
+
+
+      <script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbwZLIAfQBoxxHDz2ujCzrAx-HGg1fsQaatf0CvFzCTHLQj4tPEkUVM_UcRLMFagNge6/exec'
+			const form = document.forms['contact-form']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aiza's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="HeadBox">
+        <div class="main">
+            <nav> 
+              <img src="Images/menu.png" class="menu-png">
+              <img src="Images/logo.png" class="name-logo">
+            
+              <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#About-container">ABOUT</a></li>
+                <li><a href="contact.html">CODSOFT REPOSITORY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+            
+
+
+        <div class="wrapper"> 
+            <div class="cols cols 0">
+                <h1>I'm <span class="multiText">Coder</span></h1>
+                <p>Marhaba! I'm Aiza, and I'm Codsoft Coder</p>
+            </div>
+        </div>
+
+        <!-- About -->
+        <style>
+            .tabs {
+                align-items: center;
+            }
+        
+            .links {
+                list-style-type: none;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        
+            .links-contents ul {
+                list-style-type: none;
+                padding: 0;
+            }
+        
+            .links-contents ul li {
+                margin-bottom: 10px;
+            }
+        
+        </style>
+        
+        <div id="ABOUT">
+            <div class="box">
+                <div class="row">
+                    <div id="About-container">
+                        <div class="ABOUT-col-1">
+                            <img src="Images/picsart.png" alt="Image">
+                        </div>
+                    </div>
+        
+                    <div class="ABOUT-col-2">
+                        <h2 class="sub-title">About Me</h2>
+                        <p> I'm passionate about creative computing,
+                            constantly explores the intersection of technology and art. <br>
+                            As a dedicated student, she embraces innovative approaches to design and programming,
+                            <br> challenging her creativity into digital experiences that captivate and inspire.</p>
+        
+                        <div class="tabs">
+                            <p class='links active-link' onclick="opentab('skills')">Skills</p>
+                            <p class='links' onclick="opentab('education')">Education</p>
+                            <p class='links' onclick="opentab('certificates')">Certificates</p>
+                        </div>
+        
+                        <div class="links-contents active-touch" id="skills">
+                            <ul>
+                                <li><span>UI/UX Designer</span><br>Creating a User Interface for a Website</li><br>
+                                <li><span>Web And App Developer </span><br>Creating Webpage, Android and iOS Apps</li><br>
+                            </ul>
+                        </div>
+        
+                        <div class="links-contents" id="education">
+                            <ul>
+                                <li><span>O-levels</span><br>Oxford and Cambridge Examination</li><br>
+                                <li><span>AS and A-level </span><br>IGCSE Cambridge Board</li><br>
+                                <li><span>Bachelor's Degree  </span><br>Currently Enrolled in Bath Spa University</li>
+                            </ul>
+                        </div>
+        
+                        <div class="links-contents" id="certificates">
+                            <ul>
+                                <li><span>Google Certificates</span><br>Foundation of UX UI design</li><br>
+                                <li><span>Microsoft Certificates</span><br>Microsoft Certified: Azure Developer Associate</li>
+                                <li><span> Solo-Learn  Certificates</span><br>Python, HTML, CSS, Python and Javascript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Web Development Help</h4>
+                    <p>Need web development support? I'm here to assist you </p>
+                </div>
+                
+                
+                <!--footer-col-2-->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="index.html#About-container"> About</a></li>
+                        <li><a href="index.html#Skills-container"> Skills</a></li>
+                        <li><a href="contact.html"> Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <!--footer-col-3-->
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="mailto:aizayy21@gmail.com">Email: aizayy21@gmail.com</a></li>
+                        <li><a href="tel:+1234567890">Phone: +123-456-7890</a></li>
+                        <li><a href="https://www.linkedin.com/in/aizayy21/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://msaizah21.github.io/Portfolio/" target="_blank">Portfolio</a></li>
+                    </ul>
+                </div>
+                <!--footer-col-->
+                <div class="footer-col">
+                    <h4>Newsletter Subscription</h4>
+                    <form id="newsletterForm">
+                        <input type="text" id="nameInput" class="inputName" placeholder="Your Name">
+                        <input type="text" id="emailInput" class="inputEmail" placeholder="Your Email">
+                        <input type="submit" value="Submit" class="inputSubmit">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="index.js"></script>
+    </body>
+    </html>
