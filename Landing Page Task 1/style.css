@@ -241,14 +241,14 @@ body {
 
 .category-item i {
   font-size: 3rem;
-  color: #0056b3;
+  color: #002b59;
   margin-bottom: 20px;
 }
 
 .category-item h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #0056b3;
+  color: #002b59;
 }
 
 .category-item p {
@@ -693,7 +693,7 @@ section h2 {
 }
 
 footer {
-  background-color: #111314;
+  background-color: #212223;
   color: #ffffff;
   font-size: 16px;
 }
