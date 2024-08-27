@@ -10,28 +10,50 @@
 
 </head>
 <body>
+  <!-- Showcase section serves as the hero section, typically used to grab attention with key content like a slogan or call to action. -->
   <section class="showcase">
+    
+    <!-- Header contains the logo, the company name, and a toggle for navigation (if implemented). -->
     <header>
+      <!-- Logo image for branding. -->
       <div class="logo-pic"><img src="icon-vmake.png" alt="logo"></div>
+      
+      <!-- Company name as a header. -->
       <h2 class="logo">CodSoft</h2>
+      
+      <!-- Toggle for mobile navigation menu (if applicable). -->
       <div class="toggle"></div>
     </header>
+    
+    <!-- An overlay is used for visual effects, often to dim the background and make the text more readable. -->
     <div class="overlay"></div>
+    
+    <!-- Main text content for the showcase section, including the primary message and call-to-action button. -->
     <div class="text">
       <h2>Take Your Career</h2>
       <h3>Next Level with CodSoft</h3>
+      
+      <!-- Brief description encouraging users to join the internship program. -->
       <p>Join us for an exciting internship adventure! You'll get hands-on experience, meet new people,
         and work on real projects that help you learn and grow your skills. If you want to understand what it's like to work in a fun environment,
         our program is perfect for you. Don't miss out on this great chance to learn with us!</p>
+      
+      <!-- Call-to-action button that links to an application form, with an event handler to play audio on click. -->
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9wZJpC7Q_T3VcxOQ7YRACFcor6N-psh060RrIwZb7tGBBvw/viewform" onclick="playAudio()">Apply</a>
+      
+      <!-- Audio element is hidden but will play when the apply button is clicked. -->
       <audio id="myAudio" src="audio.mp3"></audio>
     </div>
+    
+    <!-- Social media icons providing links to CodSoft's social media pages. -->
     <ul class="social">
       <li><a href="https://www.facebook.com/p/CodSoft-100094659845068/"><img src="facebook.png" alt="Facebook"></a></li>
       <li><a href="https://x.com/code_soft"><img src="twitter.png" alt="Twitter"></a></li>
       <li><a href="https://www.instagram.com/codsoft_official/?hl=ar"><img src="instagram.png" alt="Instagram"></a></li>
     </ul>
   </section>
+  
+  <!-- Navigation menu with links to different sections of the website. -->
   <div class="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -45,10 +67,13 @@
     </ul>
   </div>
 
-  <!-- Internship Categories Section -->
+  <!-- Internship Categories Section provides a breakdown of different internship opportunities available at CodSoft. -->
   <section class="internship-categories">
     <h2>Explore Our Internship Categories</h2>
+    
+    <!-- Container for internship categories, each with a brief description and an apply button. -->
     <div class="categories-container">
+      <!-- Each category-item represents a different internship category with its own description and apply link. -->
       <div class="category-item">
         <h3>Web & App Development</h3>
         <p>Build modern and responsive websites with hands-on projects.</p>
@@ -92,9 +117,11 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
+  <!-- Testimonials Section where past interns share their experiences. -->
   <section class="testimonials">
     <h2>What Our Interns Say</h2>
+    
+    <!-- Container for testimonials, each represented by a testimonial-item with a quote and the intern's name. -->
     <div class="testimonials-container">
       <div class="testimonial-item">
         <p>"CodSoft provided me with an amazing learning experience. The hands-on projects were challenging but rewarding!"</p>
@@ -111,10 +138,12 @@
     </div>
   </section>
 
-  <!-- Contact Us Section -->
+  <!-- Contact Us Section provides contact details and a brief message inviting users to reach out for more information. -->
   <section class="contact">
     <h2>Get in Touch</h2>
     <p>If you have any questions or would like more information about our programs, feel free to reach out to us.</p>
+    
+    <!-- Contact information including email, phone, and physical address. -->
     <div class="contact-info">
       <p><strong>Email:</strong> info@codsoft.com</p>
       <p><strong>Phone:</strong> +123 456 7890</p>
@@ -122,17 +151,16 @@
     </div>
   </section>
 
-
-
-
-
-
+  <!-- Link to the JavaScript file for adding interactive behavior to the page. -->
   <script src="script.js"></script>
 </body>
 
-<!-- Updated Footer HTML -->
-<footer>
-  <div class="row primary-section">
+
+<!-- Footer with additional company information, quick links, and a subscription form. -->
+  <footer>
+    <div class="row primary-section">
+      
+      <!-- About section provides a brief overview of CodSoft. -->
       <div class="column about-section">
           <h3>Codsoft</h3>
           <p>
@@ -142,6 +170,8 @@
               Data Science, and more. Join us to elevate your career and stay ahead in the ever-evolving technology landscape.
           </p>
       </div>
+      
+      <!-- Quick Links section offers easy access to other important pages on the website. -->
       <div class="column links-section">
           <h3>Quick Links</h3>
           <ul class="links-list">
@@ -159,35 +189,38 @@
               </li>
           </ul>
       </div>
+      
+      <!-- Subscribe section with an input field for users to enter their email and subscribe to updates. -->
       <div class="column subscribe-section">
           <h3>Subscribe</h3>
           <div class="subscribe-input">
               <input type="email" placeholder="Your email id here" />
               <button class="subscribe-button">Subscribe</button>
           </div>
+      </div>
+    </div>
 
-      </div>
-  </div>
-
-  <div class="row secondary-section">
-      <div class="contact-item">
-          <p><i class="fas fa-phone-alt"></i></p>
-          <p>+12 123456789</p>
-      </div>
-      <div class="contact-item">
-          <p><i class="fas fa-envelope"></i></p>
-          <p>mail@domain.com</p>
-      </div>
-      <div class="contact-item">
-          <p><i class="fas fa-map-marker-alt"></i></p>
-          <p>1234 Pearl Street</p>
-      </div>
-  </div>
-  <div class="row copyright-section">
-      <p>Copyright &copy; 2024 Codsoft | All Rights Reserved</p>
-  </div>
-</footer>
-
+    <!-- Secondary section with contact icons and additional contact details. -->
+    <div class="row secondary-section">
+        <div class="contact-item">
+            <p><i class="fas fa-phone-alt"></i></p>
+            <p>+12 123456789</p>
+        </div>
+        <div class="contact-item">
+            <p><i class="fas fa-envelope"></i></p>
+            <p>mail@domain.com</p>
+        </div>
+        <div class="contact-item">
+            <p><i class="fas fa-map-marker-alt"></i></p>
+            <p>1234 Pearl Street</p>
+        </div>
+    </div>
+    
+    <!-- Copyright section at the bottom of the footer. -->
+    <div class="row copyright-section">
+        <p>Copyright &copy; 2024 Codsoft | All Rights Reserved</p>
+    </div>
+  </footer>
 
 
 

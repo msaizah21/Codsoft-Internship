@@ -1,5 +1,7 @@
+/* Importing the Poppins font from Google Fonts with different font weights */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+/* Defining root variables for primary colors, text, background, and white */
 :root {
   --primary-color: #0a7dbb;
   --secondary-color: #6c0d0d;
@@ -8,6 +10,7 @@
   --white: #ffffff;
 }
 
+/* Basic reset for margin, padding, box-sizing, and font-family */
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +18,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Base styles for the body */
 body {
   padding: 0;
   margin: 0;
@@ -23,6 +27,7 @@ body {
   flex-direction: column;
   background-color: #f4f4f4;
 }
+
 
 /* Showcase Section */
 .showcase {
@@ -43,6 +48,7 @@ body {
   right: 300px;
 }
 
+/* Header within the showcase section */
 .showcase header {
   position: absolute;
   top: 0;
@@ -55,12 +61,15 @@ body {
   align-items: center;
 }
 
+/* Logo styling */
 .logo {
   text-transform: uppercase;
   cursor: pointer;
   color: #fff;
 }
 
+
+/* Styling for the logo image */
 .logo-pic img {
   width: 50px;
   height: auto;
@@ -68,6 +77,7 @@ body {
   display: block;
 }
 
+/* Menu toggle button */
 .toggle {
   position: relative;
   width: 60px;
@@ -83,6 +93,7 @@ body {
   cursor: pointer;
 }
 
+/* Styling for the background video */
 .showcase video {
   position: absolute;
   top: 0;
@@ -93,6 +104,7 @@ body {
   opacity: 0.8;
 }
 
+/* Overlay color effect for the showcase */
 .overlay {
   position: absolute;
   top: 0;
@@ -103,11 +115,14 @@ body {
   mix-blend-mode: overlay;
 }
 
+
+/* Text content styling within the showcase */
 .text {
   position: relative;
   z-index: 10;
 }
 
+/* Main heading in the showcase */
 .text h2 {
   font-size: 5em;
   font-weight: 800;
@@ -116,6 +131,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Subheading in the showcase */
 .text h3 {
   font-size: 4em;
   font-weight: 700;
@@ -124,6 +140,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Paragraph styling in the showcase */
 .text p {
   font-size: 1.1em;
   color: #fff;
@@ -132,6 +149,7 @@ body {
   max-width: 700px;
 }
 
+/* Link button in the showcase */
 .text a {
   display: inline-block;
   font-size: 1em;
@@ -150,6 +168,7 @@ body {
   letter-spacing: 6px;
 }
 
+/* Social media icons at the bottom of the showcase */
 .social {
   position: absolute;
   z-index: 10;
@@ -175,7 +194,7 @@ body {
   transform: scale(0.5) translateY(-15px);
 }
 
-/* Menu */
+/* Menu Section */
 .menu {
   position: absolute;
   top: 0;
@@ -258,6 +277,7 @@ body {
 }
 
 /* Apply Button */
+
 .apply-btn {
   background-color: #3f464e;
   color: #fff;
@@ -268,6 +288,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Hover effects for category items */
 .apply-btn:hover {
   background-color: #000000;
 }
@@ -278,7 +299,8 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
+/* Responsive design for smaller screens */
+
 @media (max-width: 768px) {
   .categories-container {
       flex-direction: column;
@@ -291,9 +313,7 @@ body {
 }
 
 
-
-
-/* New Sections */
+/* Process Section */
 
 .process {
   padding: 50px 0;
@@ -307,6 +327,7 @@ body {
   color: var(--text-color);
 }
 
+/* Container for process steps */
 .process-container {
   display: flex;
   flex-wrap: wrap;
@@ -315,6 +336,7 @@ body {
   gap: 20px;
 }
 
+/* Styling for each process step */
 .process-item {
   background-color: #fff;
   border-radius: 10px;
@@ -348,6 +370,7 @@ body {
   color: #666;
 }
 
+/* Arrow styling between process steps */
 .arrow {
   font-size: 2rem;
   color: var(--primary-color);
