@@ -16,7 +16,12 @@
 }
 
 body {
-  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
 }
 
 /* Showcase Section */
@@ -497,148 +502,6 @@ section h2 {
 
 
 
-/* Footer */
-
-footer {
-  background-color: #111314;
-  color: #ffffff;
-  font-size: 16px;
-}
-
-footer * {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-}
-
-footer .row {
-  padding: 2em 1em;
-}
-
-footer .row.primary {
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  align-items: stretch;
-}
-
-footer .column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 2em;
-  min-height: 15em;
-}
-
-footer h3 {
-  width: 100%;
-  text-align: left;
-  color: #007bff;
-  font-size: 1.6em;
-  white-space: nowrap;
-}
-
-footer ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-
-footer li:not(:first-child) {
-  margin-top: 0.8em;
-}
-
-footer ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-footer ul li a:hover {
-  color: #007bff;
-}
-
-footer .about p {
-  text-align: justify;
-  line-height: 2;
-  margin: 0;
-}
-
-footer input,
-footer button {
-  font-size: 1em;
-  padding: 1em;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
-footer button {
-  background-color: #007bff;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-footer div.social {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.4em;
-  flex-direction: row;
-  margin-top: 0.5em;
-}
-
-footer .social a {
-  color: #ffffff;
-}
-
-footer .social a:hover {
-  color: #007bff;
-}
-
-footer .row.secondary {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-
-footer .row.secondary i {
-  font-size: 1.8em;
-  color: #007bff;
-}
-
-footer .row.secondary div {
-  padding: 1em 0;
-  width: 100%;
-}
-
-footer .row.secondary div:hover {
-  background-color: #25262e;
-}
-
-footer .copyright {
-  padding: 0.3em 1em;
-  background-color: #25262e;
-}
-
-footer .copyright p {
-  font-size: 0.9em;
-  text-align: center;
-}
-
-@media screen and (max-width: 850px) {
-  footer .row.primary {
-    grid-template-columns: 1fr;
-  }
-  footer .row.secondary {
-    flex-direction: column;
-  }
-}
-
-
-
-
-
 
 
 
@@ -825,3 +688,139 @@ footer .copyright p {
 }
 
 
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: #111314;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.primary-section {
+  padding: 2em 1em;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: stretch;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+
+h3 {
+  width: 100%;
+  text-align: left;
+  color: #007bff;
+  font-size: 1.6em;
+  white-space: nowrap;
+}
+
+.links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.link-item:not(:first-child) {
+  margin-top: 0.8em;
+}
+
+.link-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link-item a:hover {
+  color: #007bff;
+}
+
+.about-section p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+
+.subscribe-input input,
+.subscribe-button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.subscribe-button {
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.social-section {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+
+.social-section a {
+  color: #ffffff;
+}
+
+.social-section a:hover {
+  color: #007bff;
+}
+
+.secondary-section {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.secondary-section i {
+  font-size: 1.8em;
+  color: #007bff;
+}
+
+.contact-item {
+  padding: 1em 0;
+  width: 100%;
+}
+
+.contact-item:hover {
+  background-color: #25262e;
+}
+
+.copyright-section {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+
+.copyright-section p {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .primary-section {
+    grid-template-columns: 1fr;
+  }
+  .secondary-section {
+    flex-direction: column;
+  }
+}
